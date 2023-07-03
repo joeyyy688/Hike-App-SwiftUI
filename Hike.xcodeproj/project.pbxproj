@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0409FE202A530E700080E2A2 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409FE1F2A530E700080E2A2 /* GradientButtonStyle.swift */; };
 		04D166E82A4B45A40060D9EF /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D166E72A4B45A40060D9EF /* HikeApp.swift */; };
 		04D166EA2A4B45A40060D9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D166E92A4B45A40060D9EF /* ContentView.swift */; };
 		04D166EC2A4B45A50060D9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D166EB2A4B45A50060D9EF /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0409FE1F2A530E700080E2A2 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		04D166E42A4B45A40060D9EF /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D166E72A4B45A40060D9EF /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		04D166E92A4B45A40060D9EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				04D166FB2A4B8C810060D9EF /* ColorExtension.swift */,
+				0409FE1F2A530E700080E2A2 /* GradientButtonStyle.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				04D166F72A4B827B0060D9EF /* CardView.swift in Sources */,
 				04D166E82A4B45A40060D9EF /* HikeApp.swift in Sources */,
 				04D166FE2A4B9F530060D9EF /* CustomButtonView.swift in Sources */,
+				0409FE202A530E700080E2A2 /* GradientButtonStyle.swift in Sources */,
 				04D166F92A4B85DB0060D9EF /* CustomBackgroundView.swift in Sources */,
 				04D166FC2A4B8C810060D9EF /* ColorExtension.swift in Sources */,
 			);
