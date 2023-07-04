@@ -11,6 +11,7 @@ struct CardView: View {
     
     @State private var imageNumber: Int = 1
     @State private var randomNumber: Int = 1
+    @State private var isShowingBottomSheet = false
     
     func randomImage() {
         repeat  {
@@ -30,7 +31,7 @@ struct CardView: View {
                 
                 VStack(alignment: .leading) {
                     
-                    HStack (spacing: 30){
+                    HStack {
                         Text("Hiking")
                             .font(.system(size: 53))
                             .fontWeight(.black)
@@ -41,10 +42,17 @@ struct CardView: View {
                                 )
                             )
                         
+                        Spacer()
+                        
                         Button(action: {
-                            
+                            isShowingBottomSheet.toggle()
                         }, label: {
                             CustomButtonView()
+                        })
+                        .sheet(isPresented: $isShowingBottomSheet, content: {
+                            SettingsView()
+                                .presentationDragIndicator(.visible)
+                                .presentationDetents([.medium, .large])
                         })
                     }//: HSTACK
                     
