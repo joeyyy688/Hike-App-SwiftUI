@@ -66,7 +66,24 @@ struct SettingsView: View {
                 .frame(maxWidth: .infinity)
             }//: SECTION
             .listRowSeparator(.hidden)
+            
+            Section(
+                header: Text("ABOUT THE APP"),
+                footer: HStack{
+                    Spacer()
+                    Text("COPYRIGHT © ALL RIGHTS RESERVED")
+                    Spacer()
+                }
+                    .padding(.vertical)
+            ) {
+
+                ForEach(data, id: \.self){ info in
+                    CustomListRowView(iconName: info.iconName, leadingTitle: info.leadingTitle, trailingTitle: info.trailingTitles, iconBackgroundColor: info.iconBackgroundColor, urlLink: info.urlLink)
+                }
+            }//: SECTION
         }//: LIST
+        
+        
     }//: BODY
 }
 
